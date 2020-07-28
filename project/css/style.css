@@ -1,0 +1,469 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --header_footer:#facf11;
+    --footer_dark: #daa61e;
+    --dark: #000;
+}
+
+.clearfix {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+}
+
+.container_contact {
+    width: 70%;
+    margin: auto;
+}
+
+.zoom {
+    transition: transform .4s;
+  }
+  
+  .zoom:hover {
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.3);
+    cursor: pointer;
+    background: yellow!important;
+  }
+
+  .rotate {
+    animation: rotation 4s linear;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+.vl {
+    border-left: 3px solid #e8e8e8;
+    height: 600px;
+    position: relative;
+    left: 350px;
+}
+
+.btn-warning {
+	padding: 10px 35px;
+    border-radius: 30px;
+    background: #facf11;
+}
+
+/********** NAVIGATION *************/
+
+.logo {
+    position: static;
+    top: 10px;
+    height: 200px;
+    left: 35px;
+}
+
+.navigation {
+    background:var(--header_footer)!important;
+    height: 100px;
+}
+
+.navigation .active {
+    background:rgba(0,0,0,.2)!important;
+	height: 100px;
+}
+
+.active {
+    background: var(--footer_dark)!important;
+}
+
+.nav-link {
+    border: 1px solid rgba(255,255,255,.3);
+    height: 100px;
+}
+
+.nav-link:hover {
+    background: #eec015;
+    transition: .4 ease;
+}
+
+
+
+
+
+/********** END OF NAVIGATION *************/
+
+
+/********** HEADER *************/
+
+.header {
+    height: 600px;
+    background: #efefef;
+}
+
+.header_impressum {
+    background: #efefef;
+    height: 800px;
+}
+
+.header_impressum h2 {
+    position: relative;
+    bottom: 30px;
+}
+
+.home {
+   margin: 20px;
+}
+
+.home1 {
+    position: relative;
+    top: 30px;
+}
+.location {
+    position: relative;
+    top: 30px;
+}
+
+.round {
+     position: relative;
+     top: 190px;
+     left: 20px;
+}
+
+.logo_round {
+    position: relative;
+    top: 150px;
+    left: 165px;
+}
+
+.logo1 {
+    position: relative;
+    top: 235px;
+    left: 325px;
+}
+
+.round_one {
+    position: relative;
+    bottom: 190px;
+    left: 335px;
+}
+
+.round_two {
+    position: relative;
+    right: -50px;
+    bottom: 90px;
+    z-index: 1;
+}
+
+.round_three {
+    position: relative;
+    bottom: -190px;
+    left: 122px;
+}
+
+.round_four {
+    position: relative;
+    left: 25%;
+    bottom: 85px;
+}
+
+
+.round_five {
+    position: relative;
+    bottom: -95px;
+    left: -35%;
+}
+
+.round_six {
+    position: relative;
+    bottom: -95px;
+}
+
+/********** END OF HEADER *************/
+
+
+/********** FOOTER *************/
+
+.footer {
+    background: var(--footer_dark)!important;
+      height: 100px!important;
+}
+
+.footer .social-icons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer .col-md-4 {
+    flex: 0 0 32%;
+    position: relative;
+    bottom: 24px;
+}
+
+.footer .col-md-4:hover {
+    border-left: 1px solid rgb(255, 255, 255,.4);
+    border-right: 1px solid rgb(255, 255, 255,.4);
+    transition: .4 ease;
+    background: #fecd28;
+}
+
+
+.heading-footer {
+	line-height: 1;
+    padding-left: 10px;
+}
+
+
+/********** END OF FOOTER *************/
+
+
+/********** COPYRIGHT *************/
+
+.copyright {
+	background: var(--header_footer);
+    color: #fff;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+
+/********** END OF COPYRIGHT *************/
+
+
+/********** IMPRESSUM *************/
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color:transparent;
+    border: 2px solid orange;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    bottom:550px;
+    left: 231px;
+  }
+
+  .dot1 {
+    height: 15px;
+    width: 15px;
+    background-color: transparent;
+    border: 2px solid orange;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    bottom: 450px;
+    left: 211px;
+  }
+
+  .dot1:hover {
+      background: orange;
+      transition: .3 ease;
+      cursor: pointer;
+  }
+
+  .dot2 {
+    height: 15px;
+    width: 15px;
+    background-color:transparent;
+    border: 2px solid orange;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    bottom: 335px;
+    left: 192px;
+  }
+
+  .dot3 {
+    height: 15px;
+    width: 15px;
+    background-color:transparent;
+    border: 2px solid orange;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    bottom: 210px;
+    left: 172px;
+  }
+
+  .dot4 {
+    height: 15px;
+    width: 15px;
+    background-color:transparent;
+    border: 2px solid orange;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    bottom: 80px;
+    left: 154px;
+  }
+
+.impressum_content_left {
+    position: relative;
+    bottom: 590px;
+    left: 140px;
+}
+
+.impressum_content_left1 {
+    position: relative;
+    bottom: 520px;
+    left: 150px;
+}
+
+.impressum_content_left2 {
+    position: relative;
+    bottom: 480px;
+    left: 200px;
+}
+
+.impressum_content_left3 {
+    position: relative;
+    bottom: 460px;
+    left: 105px;
+}
+
+.impressum_content_left4 {
+    position: relative;
+    bottom: 370px;
+    left: 70px;
+}
+
+.header_impressum h6 {
+      font-size: .9rem;
+}
+
+
+/********** END OF IMPRESSUM *************/
+
+
+/********** CONTACT *************/
+
+.contact .col-md-6:first-child {
+   position: relative;
+    top: 140px;
+}
+
+.location_heading {
+    position: relative;
+    left: 20px;
+}
+
+.emails {
+ padding-top: 80px;
+ position: relative;
+ left: 50px;
+}
+
+.contact_btn {
+     border-radius: 5px;
+}
+
+.form-control {
+    background: #e8e8e8;
+    border: none;
+}
+
+.form-control:focus {
+    transition: .3s ease;
+    border: 2px solid var(--header_footer);
+}
+
+
+/********** END OF CONTACT *************/
+
+
+/********** RESPONSIVE *************/
+
+@media(max-width:768px) {
+    .navbar-nav {
+        flex-direction: row;
+    }
+
+    .d-flex {
+        display: none!important;
+    }
+
+    .collapse:not(.show) {
+        display: flex!important;
+    }
+
+    .logo1 {
+        position: relative;
+        top: 230px;
+        left: 35px;
+    }
+
+    .round {
+        position: relative;
+        top: -65px;
+        left: -15px;
+    }
+
+    .round_one {
+        position: relative;
+        bottom: 440px;
+        left: 45px;
+    }
+
+    .round_two {
+        position: relative;
+        right: 111px;
+        bottom: 586px;
+    }
+
+    .round_three {
+        position: relative;
+        bottom: 570px;
+        left: 43px;
+    }
+
+    .round_four {
+        position: relative;
+        left: 82%;
+        bottom: 1086px;
+    }
+
+    .round_five {
+        position: relative;
+        bottom: 1164px;
+        left: -50%;
+    }
+
+    .round_six {
+        position: relative;
+        bottom: 1410px;
+        left: 82%;
+    }
+
+    .d-flex {
+       flex-direction: row!important;
+    }
+
+    .footer .row .d-flex {
+        flex-direction: row!important;
+        width: 50%;
+    }
+
+  
+}
+
+
+
+
+
+
+/********** END OF RESPONSIVE *************/
+
+
+
